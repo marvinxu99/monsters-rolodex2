@@ -13,6 +13,8 @@ const App = () => {
   const [monsters, setMonsters] = useState([]);
   const [filteredMonsters, setFilteredMonsters] = useState(monsters);
 
+  //console.log("rendered");
+
   // Only fetch once as we set the dependancy list to empty
   useEffect(() => {
     fetch('https://jsonplaceholder.typicode.com/users')
@@ -49,8 +51,8 @@ const App = () => {
 
 //Class component
 // class App extends Component {
-//   constructor() {
-//     super();
+//   constructor(props) {
+//     super(props);
 
 //     this.state = {
 //       monsters: [],
