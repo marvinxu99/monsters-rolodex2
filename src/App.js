@@ -1,4 +1,4 @@
-import { Component } from 'react';
+//import { Component } from 'react';
 import { useState, useEffect } from 'react';
 
 import './App.css';
