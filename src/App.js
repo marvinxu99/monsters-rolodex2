@@ -4,6 +4,9 @@ import { useState, useEffect } from 'react';
 import './App.css';
 import CardList from './components/card-list/card-list.component';
 import SearchBox from './components/search-box/search-box.component';
+import Clock from './components/Clock/clock.component';
+import Toggle from './components/Toggle/toggle.component';
+import EssayForm from './components/EssayForm/essay-form.component';
 
 
 //Functional component
@@ -37,6 +40,9 @@ const App = () => {
 
   return (
     <div className="App">
+      <EssayForm />
+      <Toggle />
+      <Clock />
       <h1 className='app-title'>Monster Rolodex</h1>
       <SearchBox 
         className='monster-search-box' 

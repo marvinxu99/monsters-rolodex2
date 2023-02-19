@@ -1,4 +1,4 @@
-import { Component } from 'React';
+import { Component } from "react";
 
 class Clock extends Component {
     constructor(props) {
@@ -7,11 +7,21 @@ class Clock extends Component {
     }
   
     componentDidMount() {
+        this.timerID = setInterval(() => {
+            this.tick();
+        }, 1000);
     }
   
     componentWillUnmount() {
+        clearInterval(this.timerID);
     }
-  
+
+    tick() {
+        this.setState({
+          date: new Date()
+        });
+    }
+
     render() {
       return (
         <div>
@@ -20,6 +30,6 @@ class Clock extends Component {
         </div>
       );
     }
-  }
+}
 
 export default Clock;
