@@ -40,9 +40,11 @@ const App = () => {
 
   return (
     <div className="App">
+    {/*
       <EssayForm />
       <Toggle />
       <Clock />
+    */}
       <h1 className='app-title'>Monster Rolodex</h1>
       <SearchBox 
         className='monster-search-box' 
